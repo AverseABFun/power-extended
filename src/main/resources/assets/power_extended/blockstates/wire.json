@@ -1,5 +1,10 @@
 {
-    "variants": {
-      "": { "model": "power_extended:block/wire" }
-    }
+  "variants": {
+    "facing=north": { "model": "power_extended:block/wire", "uvlock": true },
+    "facing=east": { "model": "power_extended:block/wire", "y": 90, "uvlock": true },
+    "facing=south": { "model": "power_extended:block/wire", "y": 180, "uvlock": true },
+    "facing=west": { "model": "power_extended:block/wire", "y": 270, "uvlock": true },
+    "facing=up": { "model": "power_extended:block/wire", "x": 90, "uvlock": true },
+    "facing=down": { "model": "power_extended:block/wire", "x": 270, "uvlock": true }
+  }
 }

@@ -20,7 +20,7 @@ public class PowerExtended implements ModInitializer {
     public static final Item POWER_WAND_ITEM          = new PowerWand(new FabricItemSettings());
 
     // blocks
-    public static final Block WIRE_BLOCK               = new Block(FabricBlockSettings.create().hardness(0.1f).resistance(0.2f));
+    public static final Block WIRE_BLOCK               = new WireBlock(FabricBlockSettings.create().hardness(0.1f).resistance(0.2f));
     public static final Block STRENGTHENED_WIRE_BLOCK   = new Block(FabricBlockSettings.create().hardness(50.0f).resistance(1200.0f).requiresTool());
     public static final Block COMPACTED_OBSIDIAN_BLOCK = new Block(FabricBlockSettings.create().hardness(70.0f).resistance(1500.0f).requiresTool());
 

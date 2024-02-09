@@ -1,4 +1,7 @@
 {
     "item.power_extended.power_wand": "Power Wand",
+    "block.power_extended.wire": "Wire",
+    "block.power_extended.strengthened_wire": "Strengthened Wire",
+    "block.power_extended.compacted_obsidian": "Compacted Obsidian",
     "itemGroup.power_extended.power_extended_group": "Power Extended"
 }
