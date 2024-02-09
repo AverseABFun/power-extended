@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+      "all": "power_extended:block/power_receptor",
+      "particle": "power_extended:block/power_receptor"
+    }
+}

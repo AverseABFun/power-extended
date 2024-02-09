@@ -1,10 +1,17 @@
 {
   "variants": {
-    "facing=north": { "model": "power_extended:block/wire", "uvlock": true },
-    "facing=east": { "model": "power_extended:block/wire", "y": 90, "uvlock": true },
-    "facing=south": { "model": "power_extended:block/wire", "y": 180, "uvlock": true },
-    "facing=west": { "model": "power_extended:block/wire", "y": 270, "uvlock": true },
-    "facing=up": { "model": "power_extended:block/wire", "x": 90, "uvlock": true },
-    "facing=down": { "model": "power_extended:block/wire", "x": 270, "uvlock": true }
+    "facing=north,powered=false": { "model": "power_extended:block/wire", "uvlock": true },
+    "facing=east,powered=false": { "model": "power_extended:block/wire", "y": 90, "uvlock": true },
+    "facing=south,powered=false": { "model": "power_extended:block/wire", "y": 180, "uvlock": true },
+    "facing=west,powered=false": { "model": "power_extended:block/wire", "y": 270, "uvlock": true },
+    "facing=up,powered=false": { "model": "power_extended:block/wire", "x": 90, "uvlock": true },
+    "facing=down,powered=false": { "model": "power_extended:block/wire", "x": 270, "uvlock": true },
+
+    "facing=north,powered=true": { "model": "power_extended:block/wire_powered" },
+    "facing=east,powered=true": { "model": "power_extended:block/wire_powered", "y": 90 },
+    "facing=south,powered=true": { "model": "power_extended:block/wire_powered", "y": 180 },
+    "facing=west,powered=true": { "model": "power_extended:block/wire_powered", "y": 270 },
+    "facing=up,powered=true": { "model": "power_extended:block/wire_powered", "x": 90 },
+    "facing=down,powered=true": { "model": "power_extended:block/wire_powered", "x": 270 }
   }
 }

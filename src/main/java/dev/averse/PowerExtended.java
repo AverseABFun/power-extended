@@ -21,8 +21,8 @@ public class PowerExtended implements ModInitializer {
 
     // blocks
     public static final Block WIRE_BLOCK               = new WireBlock(FabricBlockSettings.create().hardness(0.1f).resistance(0.2f));
-    public static final Block STRENGTHENED_WIRE_BLOCK   = new Block(FabricBlockSettings.create().hardness(50.0f).resistance(1200.0f).requiresTool());
     public static final Block COMPACTED_OBSIDIAN_BLOCK = new Block(FabricBlockSettings.create().hardness(70.0f).resistance(1500.0f).requiresTool());
+    public static final Block WIRE_JUNCTION_BLOCK      = new Block(FabricBlockSettings.create().hardness(5.0f).resistance(7.0f).requiresTool());
 
 
     private static final ItemGroup POWER_EXTENDED_GROUP = FabricItemGroup.builder()
@@ -31,7 +31,7 @@ public class PowerExtended implements ModInitializer {
             .entries((context, entries) -> {
     		entries.add(POWER_WAND_ITEM);
             entries.add(WIRE_BLOCK);
-            entries.add(STRENGTHENED_WIRE_BLOCK);
+            entries.add(WIRE_JUNCTION_BLOCK);
             entries.add(COMPACTED_OBSIDIAN_BLOCK);
     	})
     	.build();
@@ -45,11 +45,12 @@ public class PowerExtended implements ModInitializer {
         Registry.register(Registries.BLOCK, new Identifier("power_extended", "wire"), WIRE_BLOCK);
         Registry.register(Registries.ITEM, new Identifier("power_extended", "wire"), new BlockItem(WIRE_BLOCK, new FabricItemSettings()));
 
-        Registry.register(Registries.BLOCK, new Identifier("power_extended", "strengthened_wire"), STRENGTHENED_WIRE_BLOCK);
-        Registry.register(Registries.ITEM, new Identifier("power_extended", "strengthened_wire"), new BlockItem(STRENGTHENED_WIRE_BLOCK, new FabricItemSettings()));
+        Registry.register(Registries.BLOCK, new Identifier("power_extended", "wire_junction"), WIRE_JUNCTION_BLOCK);
+        Registry.register(Registries.ITEM, new Identifier("power_extended", "wire_junction"), new BlockItem(WIRE_JUNCTION_BLOCK, new FabricItemSettings()));
 
         Registry.register(Registries.BLOCK, new Identifier("power_extended", "compacted_obsidian"), COMPACTED_OBSIDIAN_BLOCK);
         Registry.register(Registries.ITEM, new Identifier("power_extended", "compacted_obsidian"), new BlockItem(COMPACTED_OBSIDIAN_BLOCK, new FabricItemSettings()));
+
 
         Registry.register(Registries.ITEM_GROUP, new Identifier("power_extended", "power_extended_group"), POWER_EXTENDED_GROUP);
     }
